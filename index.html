@@ -1,0 +1,193 @@
+<! doctype html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>帮家洁官网</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/js/jquery.scrollify.js" type="text/javascript"></script>
+    <!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <script>
+      $(function() {
+        // let instance = axios.create({
+        //   baseURL: 'http://192.168.1.200:19020/',
+        //   timeout: 10000,
+        // })
+        // instance.post('category.list',{
+        //   params: {
+        //     condition:{parent_id: 0, cate_is_show: 1},
+        //     is_home_page:1,
+        //     sort:{is_self_support: "desc", cate_sort: "desc"}
+        //   }
+        // }).then(function (response) {
+        //     console.log(response);
+        //   }).catch(function (error) {
+        //     console.log(error);
+        //   });
+        $.scrollify({
+          section: ".example",
+          sectionName: false,
+          interstitialSection:".header",
+          // easing: "easeOutExpo",
+          // scrollSpeed: 1100,
+          // offset : 0,
+          scrollbars: true,
+          // standardScrollElements: "",
+          setHeights: true,
+          // overflowScroll: true,
+          // updateHash: true,
+          // touchScroll:true,
+          before:function(index) {
+            $('.example').removeClass('active');
+            $('.page' + index).addClass('active')
+          },
+          after:function() {
+
+          },
+          // afterResize:function() {
+          //   alert('afterResize')
+          // }
+        });
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header page0">
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="帮家洁logo">
+                <span style="color: #18b4ed;">帮家洁</span>
+            </div>
+            <div class="title">领启集团·广州柒度信息科技有限公司旗下帮家洁清洁服务平台</div>
+            <div class="phone">
+                <img src="./assets/img/phone.png" alt="服务热线">
+                服务热线：400-1518-937
+            </div>
+        </div>
+        <div class="example banner page1">
+            <div class="title">
+                <img src="./assets/img/title.png" alt="">
+            </div>
+        </div>
+        <div class="example service page2">
+            <div class="content">
+                <div class="left">
+                    <div class="qrcode">
+                        <img src="./assets/img/qrcode_download.png" alt="">
+                        <div class="info">
+                            <div>扫我下载</div>
+                            <div>APP更多专享资讯</div>
+                        </div>
+                    </div>
+                    <div class="qrcode">
+                        <img src="./assets/img/qrcode_wechat.png" alt="">
+                        <div class="info">
+                            <div>扫我关注</div>
+                            <div>微信公众号</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="title">
+                        <p style="font-size: 32px;margin-bottom: 20px;">家庭企业，清洁无忧</p>
+                        <p>领启集团·广州柒度信息科技有限公司旗下帮家洁清洁服务平台</p>
+                    </div>
+                    <div class="ul">
+                        <div class="li">
+                            <div class="name">
+                                家居清洁
+                            </div>
+                            <div class="item">表面擦拭无尘</div>
+                            <div class="item">油烟机灶台无油渍</div>
+                            <div class="item">物品分类整理归位</div>
+                            <div class="item">镜面无手印</div>
+                            <div class="item">马桶五金器件清洁光亮</div>
+                            <div class="item">门窗清洁光亮</div>
+                            <div class="item">地面无污渍</div>
+                            <div class="item">室内无垃圾</div>
+                        </div>
+                        <div class="li">
+                            <div class="name">
+                                开荒清洁
+                            </div>
+                            <div class="item">表面擦拭无尘</div>
+                            <div class="item">镜面无手印</div>
+                            <div class="item">马桶五金器件清洁光亮</div>
+                            <div class="item">门窗清洁光亮</div>
+                            <div class="item">地面无污渍</div>
+                            <div class="item">室内无垃圾</div>
+                        </div>
+                        <div class="li">
+                            <div class="name">
+                                深度清洁
+                            </div>
+                            <div class="item">表面擦拭无尘</div>
+                            <div class="item">厨房无油渍</div>
+                            <div class="item">物品分类整理归位</div>
+                            <div class="item">门窗清洁光亮</div>
+                            <div class="item">全屋无污垢</div>
+                            <div class="item">天花无灰尘</div>
+                        </div>
+                        <div class="li">
+                            <div class="name">
+                                办公清洁
+                            </div>
+                            <div class="item">表面擦拭无尘</div>
+                            <div class="item">物品整理归位</div>
+                            <div class="item">马桶清洁光亮</div>
+                            <div class="item">门窗清洁光亮</div>
+                            <div class="item">地面无污渍</div>
+                            <div class="item">室内无垃圾</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="example info page3">
+            <div class="content">
+                <div class="title" style="margin-top: 40px;">
+                    <p style="font-size: 32px;margin-bottom: 20px;">我们的宗旨</p>
+                    <p>专业、便捷、安全并驾齐驱，口碑是帮家洁的立身之本</p>
+                </div>
+                <div class="ul">
+                    <div class="li">
+                        <img src="./assets/img/profession.png" alt="">
+                        <div class="name">专业</div>
+                        <div class="info">服务人员严格筛选、择优录取；系统培训、 专业工具、标准化服务流程；</div>
+                    </div>
+                    <div class="li">
+                        <img src="./assets/img/convenient.png" alt="">
+                        <div class="name">便捷</div>
+                        <div class="info">随时随地快速预约；发布个性化需求、 清洁师在线接单；无需现金，轻松支付；</div>
+                    </div>
+                    <div class="li">
+                        <img src="./assets/img/safe.png" alt="">
+                        <div class="name">安全</div>
+                        <div class="info">服务人员实名认证；上门服务 家政险保驾护航。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="example introduce page4">
+            <div class="content">
+                <div class="title" style="padding: 0 160px;margin-bottom: 100px;">
+                    <p style="font-size: 32px;margin-bottom: 20px;">项目介绍</p>
+                    <p style="text-align: left;">帮家洁属于领启集团·广州柒度信息科技有限公司旗下产品，是一家新型的“互联网+生活服务”平台，提供优质家庭生活服务和企业后勤服务</p>
+                </div>
+            </div>
+            <div class="footer page5">
+                <p>广州柒度信息科技有限公司</p>
+                <p>地址：广州市番禺区钟村街道长华创意谷D区1606</p>
+                <a href="http://www.miitbeian.gov.cn">备案号：粤ICP备10094607号-10</a>
+                <a href="http://www.miitbeian.gov.cn">备案号：粤ICP备10094607号-4</a>
+                <a href="http://www.miitbeian.gov.cn">备案号：粤ICP备10094607号-5</a>
+                <a href="http://www.miitbeian.gov.cn">备案号：粤ICP备10094607号-6</a>
+                <a href="http://www.miitbeian.gov.cn">备案号：粤ICP备10094607号-9</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+.container{
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Helvetica Neue',Helvetica,STHeiti,'Microsoft YaHei',Arial,Verdana,sans-serif;
+}
+.container .header{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .header >*+*{
+    margin-left: 60px;
+}
+.container .header .logo{
+    display: flex;
+    align-items: flex-end;
+    font-size: 28px;
+}
+.container .header .logo>img{
+    margin-right: 20px;
+}
+.container .header .phone{
+    display: flex;
+    align-items: center;
+    color: #707070;
+}
+.container .header .phone>img{
+    margin-right: 10px;
+}
+.container .header .title{
+    font-size: 22px;
+}
+.container .example.banner{
+    background: url("../img/banner.png") no-repeat;
+    background-image: url("../img/banner.png");
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    position: relative;
+}
+.container .example.banner .title{
+    position: absolute;
+    top: 195px;
+    left: 389px;
+}
+.container .example.banner.active .title{
+    -webkit-animation: slideLeft 1s ease-in forwards;
+    -moz-animation: slideLeft 1s ease-in forwards;
+    -ms-animation: slideLeft 1s ease-in forwards;
+    -o-animation: slideLeft 1s ease-in forwards;
+}
+.container .example.service{
+    position: relative;
+}
+.container .example.service .content{
+    display: flex;
+}
+.container .example .left,.container .example .right{
+    width: 170px;
+}
+.container .example .left{
+    left: 80px;
+}
+.container .example.active .left{
+    -webkit-animation: slideLeft 1s ease-in forwards;
+    -moz-animation: slideLeft 1s ease-in forwards;
+    -ms-animation: slideLeft 1s ease-in forwards;
+    -o-animation: slideLeft 1s ease-in forwards;
+}
+.container .example .left .qrcode{
+    -webkit-box-shadow: 0 0 5px #18b4ed;
+    box-shadow: 0 0 5px #18b4ed;
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    color: #18b4ed;
+    font-size: 16px;
+    background: #fff;
+}
+.container .example .center{
+    margin: 0 auto;
+}
+.container .example .content{
+    padding-top: 80px;
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+}
+.container .example .content .title{
+    color: #707070;
+}
+.container .example.service .content .ul{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.container .example.service .content .li + .li{
+    margin-left: 60px;
+}
+.container .example.service .content .li .name{
+    margin: auto;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #18b4ed;
+    font-size: 28px;
+    overflow: hidden;
+    padding: 20px;
+    opacity: 0;
+}
+.container .example.service.active .content .li .name{
+    -webkit-animation: scaleBig 1s ease-in-out forwards;
+    -moz-animation: scaleBig 1s ease-in-out forwards;
+    -ms-animation: scaleBig 1s ease-in-out forwards;
+    -o-animation: scaleBig 1s ease-in-out forwards;
+}
+.container .example.service .content .li .item{
+    margin-top: 40px;
+    color: #333333;
+}
+.container .example.info .content .ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.container .example.info .content .ul .li{
+    width: 260px;
+}
+.container .example.info .content .ul .li >*{
+    margin-bottom: 40px;
+}
+.container .example.info .content .ul .li .name{
+    font-size: 20px;
+}
+.container .example.info .content .ul .li .info{
+    font-size: 18px;
+    color: #707070;
+}
+.container .example.introduce{
+    background: url("../img/introduce.png") no-repeat;
+    background-image: url("../img/introduce.png");
+    background-position: center;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    position: relative;
+}
+.container .example.introduce .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #f5f5f5;
+    color: #707070;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+}
+.container .example.introduce .footer > a{
+    font-size: 12px;
+    color: #707070;
+    text-decoration: none;
+}
+.container .example.introduce .footer > a+ a:before{
+    content: '|';
+    margin: 0 10px;
+}
+/*scaleBig*/
+@keyframes scaleBig{0%{opacity:0;-webkit-transform:scale(8,8);transform:scale(8,8)}100%{opacity:1;-webkit-transform:scale(1,1);transform:scale(1,1)}}
+@-moz-keyframes scaleBig{0%{opacity:0;-webkit-transform:scale(8,8);transform:scale(8,8)}100%{opacity:1;-webkit-transform:scale(1,1);transform:scale(1,1)}}
+@-webkit-keyframes scaleBig{0%{opacity:0;-webkit-transform:scale(8,8);transform:scale(8,8)}100%{opacity:1;-webkit-transform:scale(1,1);transform:scale(1,1)}}
+@-o-keyframes scaleBig{0%{opacity:0;-webkit-transform:scale(8,8);transform:scale(8,8)}100%{opacity:1;-webkit-transform:scale(1,1);transform:scale(1,1)}}
+
+/*slideLeft*/
+@keyframes slideLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+@-moz-keyframes slideLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+@-webkit-keyframes slideLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+@-o-keyframes slideLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+/*ifadeIn*/
+@keyframes ifadeIn{0%{opacity:0}100%{opacity:1}}
+@-moz-keyframes ifadeIn{0%{opacity:0}100%{opacity:1}}
+@-webkit-keyframes ifadeIn{0%{opacity:0}100%{opacity:1}}
+@-o-keyframes ifadeIn{0%{opacity:0}100%{opacity:1}}
